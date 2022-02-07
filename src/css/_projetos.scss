@@ -1,0 +1,67 @@
+@import 'estilos';
+
+.container__projetos {
+    background-color: $preto;
+    //height: 500px;
+    text-align: center;
+
+    h2{
+        font-family: $font-clas;
+        margin: 0px;
+        padding-top: 35px;
+        font-size: 35px;
+        color: $verde;
+    }
+
+    .projetos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20px;
+        padding-bottom: 35px;
+
+        .projetos__cards {
+            width: 30%;
+            height: 350px;
+            box-shadow: 0 4px 8px 0 $verde, 0 6px 20px 0 $verde;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 1s;
+
+
+            &:hover {
+                box-shadow: 0 4px 8px 0 #FFF, 0 6px 20px 0 #FFF;
+
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 20px 20px 0 0;
+                
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        
+            .projetos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .projetos__cards{
+                    height: auto;
+                    width: 90%;
+                    margin-bottom: 40px;
+                    
+                    img{
+                        width: auto;
+                    }
+                    
+                }
+            }
+
+        
+    }
+}

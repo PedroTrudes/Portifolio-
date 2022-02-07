@@ -1,0 +1,24 @@
+@import 'estilos';
+
+.container__sobre{
+    background-color: $preto;
+    text-align: center;
+    padding-top: 25px;
+    //border-top: 1px solid $branco;
+
+    h2{
+        font-family: $font-clas;
+        font-size: 5px;
+        color: $verde;
+        margin: 0px;
+        padding-bottom: 15px;
+        font-size: 35px;
+    }
+
+    p {
+        font-family: $font-clas;
+        color: $branco;
+        margin: 0px;
+        padding-bottom: 30px;
+    }
+}

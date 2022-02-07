@@ -1,0 +1,122 @@
+@import 'estilos';
+
+nav {
+    background-color: $preto;
+   // border-bottom: 1px solid $branco;
+
+   
+    ul{
+        background-color: $verde;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: none;
+        justify-content: space-evenly;
+
+        li {
+            list-style: none;
+            padding-right: 1.2rem;
+
+            a{
+                font-family: $font-clas;
+                text-decoration: none;
+                color: $preto;
+                font-size: 20px;
+                font-weight: bold;
+
+                &:hover{
+                    color: $azul-medio;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
+
+.container__home {
+    background-color: $preto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    align-items: center;
+    padding-top: 1.5em;
+    box-shadow: inset 0 0 1em $verde;
+    .home__img{
+     //   background-color: black;
+        //border-radius: 50px;
+     //   height: 100px;
+        //display: flex;
+        background-color: #1f202b;
+        padding: 25px;
+        border-radius: 10px;
+        border: 1px solid $preto;
+
+        .home-quadro{
+
+            border: 1px solid #484a63;
+            padding: 10px;
+            background-color: $preto;
+            border-radius: 10px;
+
+            .img__perfil {
+                height: 200px;
+                width: 150px;
+                border-radius: 100px;
+            }
+        }
+        
+
+        
+    }
+
+    .home__info{
+        text-align: center;
+        padding-bottom: 20px;
+
+        h1{
+            font-family: $font-2p;
+            color: $verde;
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            background-color: $verde;
+            transition: 1s;
+            font-size: 30px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $azul-dark;
+                color: $branco;
+                border-radius: 50px;
+                border: 1px solid $verde;
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (min-width: 800px) {
+    
+    nav{
+        ul{
+            li{
+                a{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .container__home{
+        flex-direction: row;
+        //background-image: url(../img/banner-principal.jpg);
+        background-size: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+}
+}

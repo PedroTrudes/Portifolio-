@@ -1,0 +1,82 @@
+@import 'estilos';
+
+.container__footer{
+    text-align: center;
+    background-color: $preto;
+    border-top: 1px solid $verde;
+
+    p{
+        margin-top: 0px;
+        padding-top: 10px;
+        font-size: 25px;
+        color: $verde;
+        transition: 1s;
+        cursor: pointer;
+        
+
+        &:hover{
+            color: $cinza;
+            
+        }
+    }
+
+   
+    
+    .redes__footer{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        .redes{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+
+
+        img{
+            cursor: pointer;
+            
+        }
+        p{
+
+            color: $verde;
+            padding-top: 25px;
+            padding-left: 20px;
+
+            &:hover{
+                color: $cinza;
+            }
+        }
+    }
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .container__footer {
+        display: flex;
+        justify-content: space-evenly;
+
+        p{
+            padding-top: 45px;
+        }
+        .redes__footer{
+            display: flex;
+            flex-direction: column;
+
+            .redes {
+
+                img{
+                    padding-bottom: 12px;
+                }
+                p{
+                    padding-bottom: 25px;
+                }
+            }
+
+            
+        }
+    }
+}
