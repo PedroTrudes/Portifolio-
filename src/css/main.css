@@ -6,10 +6,12 @@ body {
 
 nav {
   background-color: #2C2E3E;
+  padding: 40px 0px;
+  border-bottom: 2px solid #FAF8FA;
 }
 
 nav ul {
-  background-color: #4AD295;
+  background-color: #2C2E3E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,15 +34,15 @@ nav ul li {
 nav ul li a {
   font-family: "Playfair Display SC", serif;
   text-decoration: none;
-  color: #2C2E3E;
+  color: #FAF8FA;
   font-size: 20px;
   font-weight: bold;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #1D2C6C;
-  -webkit-transition: 1s;
-  transition: 1s;
+  color: #4AD295;
 }
 
 .container__home {
@@ -59,8 +61,8 @@ nav ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1.5em;
-  -webkit-box-shadow: inset 0 0 1em #4AD295;
-          box-shadow: inset 0 0 1em #4AD295;
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid black;
 }
 
 .container__home .home__img {
@@ -73,8 +75,13 @@ nav ul li a:hover {
 .container__home .home__img .home-quadro {
   border: 1px solid #484a63;
   padding: 10px;
+  height: 220px;
+  width: 150px;
   background-color: #2C2E3E;
   border-radius: 10px;
+  background-image: url(../img/perfil.jpeg);
+  background-position: center;
+  background-size: cover;
 }
 
 .container__home .home__img .home-quadro .img__perfil {
@@ -130,7 +137,7 @@ nav ul li a:hover {
 .container__sobre {
   background-color: #2C2E3E;
   text-align: center;
-  padding-top: 25px;
+  padding: 25px;
 }
 
 .container__sobre h2 {
@@ -185,8 +192,8 @@ nav ul li a:hover {
   -webkit-box-shadow: 0px 0px  50px black;
           box-shadow: 0px 0px  50px black;
   cursor: pointer;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .container__tecnologias .tecnologias:hover {
@@ -229,6 +236,7 @@ nav ul li a:hover {
   font-family: "Playfair Display SC", serif;
   margin: 0px;
   padding-top: 35px;
+  padding-bottom: 35px;
   font-size: 35px;
   color: #4AD295;
 }
@@ -249,13 +257,13 @@ nav ul li a:hover {
 
 .container__projetos .projetos .projetos__cards {
   width: 30%;
-  height: 350px;
+  height: 450px;
   -webkit-box-shadow: 0 4px 8px 0 #4AD295, 0 6px 20px 0 #4AD295;
           box-shadow: 0 4px 8px 0 #4AD295, 0 6px 20px 0 #4AD295;
   border-radius: 20px;
   cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .container__projetos .projetos .projetos__cards:hover {
@@ -267,6 +275,12 @@ nav ul li a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 20px 20px 0 0;
+}
+
+@media screen and (max-width: 1348px) {
+  .container__projetos .projetos .projetos__cards {
+    height: 350px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -283,7 +297,7 @@ nav ul li a:hover {
             align-items: center;
   }
   .container__projetos .projetos .projetos__cards {
-    height: auto;
+    height: 480px;
     width: 90%;
     margin-bottom: 40px;
   }

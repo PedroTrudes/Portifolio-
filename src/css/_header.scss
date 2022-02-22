@@ -1,12 +1,15 @@
 @import 'estilos';
 
+
 nav {
     background-color: $preto;
+    padding: 40px 0px;
+    border-bottom: 2px solid $branco;
    // border-bottom: 1px solid $branco;
 
    
     ul{
-        background-color: $verde;
+        background-color: $preto;
         display: flex;
         flex-direction: row;
         margin: 0px;
@@ -20,13 +23,15 @@ nav {
             a{
                 font-family: $font-clas;
                 text-decoration: none;
-                color: $preto;
+                color: $branco;
                 font-size: 20px;
                 font-weight: bold;
+                transition: 1s ease-in-out;
 
                 &:hover{
-                    color: $azul-medio;
-                    transition: 1s;
+                    color: $verde;
+                    //color: $azul-medio;
+                    
                 }
             }
         }
@@ -41,7 +46,9 @@ nav {
 
     align-items: center;
     padding-top: 1.5em;
-    box-shadow: inset 0 0 1em $verde;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid black;
+    //box-shadow: inset 0 0 1em $verde;
     .home__img{
      //   background-color: black;
         //border-radius: 50px;
@@ -56,8 +63,13 @@ nav {
 
             border: 1px solid #484a63;
             padding: 10px;
+            height: 220px;
+            width: 150px;
             background-color: $preto;
             border-radius: 10px;
+            background-image: url(../img/perfil.jpeg);
+            background-position: center;
+            background-size: cover;
 
             .img__perfil {
                 height: 200px;
