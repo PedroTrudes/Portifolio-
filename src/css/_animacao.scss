@@ -1,0 +1,41 @@
+@import "estilos";
+
+.container__home{
+    animation:color-change-3x 2s ease-out infinite alternate both
+}
+
+@keyframes color-change-3x{
+    0%{background:$azul-dark}
+    100%{background: $preto}
+}
+
+.home__info {
+  h1 {
+    animation:focus-in-expand 2s cubic-bezier(.25,.46,.45,.94) both;
+  }
+  button {
+
+    &:hover
+        {animation:shake-bottom .8s cubic-bezier(.455,.03,.515,.955) both}
+    
+  }
+}
+
+@keyframes shake-bottom{
+    0%,100%{transform:rotate(0deg);
+    transform-origin:50% 100%}
+    10%{transform:rotate(2deg)}
+    20%,40%,60%{transform:rotate(-4deg)}
+    30%,50%,70%{transform:rotate(4deg)}
+    80%{transform:rotate(-2deg)}
+    90%{transform:rotate(2deg)}}
+
+@keyframes focus-in-expand{
+    0%{letter-spacing:-.5em;
+        filter:blur(12px);
+        opacity:0
+    }
+    100%{filter:blur(0);
+        opacity:1
+    }
+}
